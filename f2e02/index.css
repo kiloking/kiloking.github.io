@@ -1,0 +1,49 @@
+ody {
+    font-family: PT Sans !important;
+  }
+  
+  /*字體顏色與hover效果*/
+  .text-black {
+    color: #00FFCE !important;
+  }
+  
+  .text-red {
+    color: #A617FF !important;
+  }
+  
+  .black-hover:hover {
+    color: #00FFCE !important;
+  }
+  
+  .red-hover:hover {
+    color: #A617FF !important;
+  }
+  
+  .pointer:hover {
+    cursor: pointer;
+  }
+  
+  /*porker存放區設計*/
+  .cardArea {
+    width: 112px;
+    height: 173px;
+  }
+  
+  /*相對定位*/
+  .relative {
+    position: relative;
+  }
+  
+  /*絕對定位*/
+  .absolute {
+    position: absolute;
+  }
+
+  /*porker存放區設計*/
+.cardArea{
+  width: 112px;
+  height: 173px;
+}
+.cardArea img{
+  width: 100%;
+}
