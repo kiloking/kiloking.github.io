@@ -1,0 +1,235 @@
+/**
+#000000
+#619CFF
+#619CFF
+#57B5FF #7C5EFF 193
+**/
+
+html, body{
+	font-family: 'Noto Sans TC', sans-serif;
+	margin: 0;
+}
+.root{
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+}
+
+h1{
+	font-size: 40px;
+}
+.title{
+	font-size: 24px;
+}
+.subHeader{
+	font-size: 20px;
+}
+.caption{
+	font-size: 16px;
+}
+.small{
+  font-size: 16px;  
+}
+.navber{
+	background: rgb(87,181,255);
+	background: linear-gradient(139deg, rgba(87,181,255,1) 0%, rgba(124,94,255,1) 100%);
+	color:white;
+	width: 179px;
+}
+.user{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.avatar{
+	width:50px ;
+	height: 50px;
+	border-radius: 50px;
+	overflow: hidden;
+}
+.avatar img{width: 100%;}
+.name{
+	font-size: 12px;
+}
+.logout{
+	font-size: 12px;
+	background: rgba(255,255,255,0.3);
+	border-radius: 25px;
+	padding: 1px 20px;
+	margin-top: 5px;
+}
+.menuList{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.menuList li{
+	font-size: 24px;
+	cursor: pointer;
+	margin: 10px 0;
+}
+.menuList li a{
+	color:white;
+	text-decoration: none;
+	padding-left: 30px;
+	display: block;
+}
+.menuList li a:hover {
+	background: rgba(255,255,255,.5);
+}
+.menuList li ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+
+}
+.menuList li ul li{
+	font-size: 16px;
+}
+.submenu ul li a{
+	padding-left: 50px;
+	line-height: 35px;
+}
+
+#home{
+	background: #fff;
+	width: 100%;
+}
+.banner{
+	width: 100%;
+}
+.banner img{
+	width: 100%;
+}
+.title{
+	display: flex;
+	justify-content: center;
+}
+
+.title h1{
+	background: linear-gradient(45deg,  rgba(87,181,255,1) 0%, rgba(124,94,255,1) 100%);
+  -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-weight: bold;
+}
+
+.searchSystem{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+.searchSystem > * {
+	margin-right: 15px;;
+}
+.searchSubmit{
+	background: #fff;
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+	color:rgba(87,181,255,1);
+	width: 43px;
+	height: 43px;
+	border-radius: 50px;
+	line-height: 40px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+/* Reset Select */
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+
+  background: #fff;
+	background-image: none;
+	border:2px solid rgba(87,181,255,1);
+	border-radius: 50px;
+}
+
+.select {
+  position: relative;
+  display: flex;
+  width: 150px;
+  height: 3em;
+  line-height: 3;
+  background: #fff;
+  overflow: hidden;
+
+}
+select {
+  flex: 1;
+  padding: 0 .5em;
+  color: #fff;
+  cursor: pointer;
+}
+/* Arrow */
+.select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1em;
+  cursor: pointer;
+  pointer-events: none;
+  -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+	transition: .25s all ease;
+	color: rgba(87,181,255,1);
+}
+/* Transition */
+.select:hover::after {
+  color: rgba(87,181,255,1);
+}
+
+input {
+	width: 300px;
+  height: 3em;
+	border:2px solid rgba(87,181,255,1);
+	border-radius: 50px;
+}
+
+.hot{
+	padding: 15px 35px;
+}
+.musicList ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	display: flex;
+}
+.musicList ul li{
+	margin-right: 25px;
+}
+.albumName{font-size: 16px;}
+.artist{font-size: 12px; color:#999;}
+
+.subTitle{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.direction{
+	display: flex;
+}
+.direction div{
+	width: 30px;
+	height: 30px;
+	border: 1px solid rgb(186, 213, 245);
+	display: block;
+	border-radius: 50px;
+	text-align: center;
+	line-height: 26px;
+	color:rgba(87,181,255,1);
+	
+}
+.direction div:first-child{
+	margin-right: 10px;
+}
+.direction .left , .direction .right{
+	
+}
