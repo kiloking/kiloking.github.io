@@ -1,0 +1,12 @@
+body{
+    display:flex;
+    justify-content: center;
+}
+.root{
+    width: 375px;
+    height: 812px;
+    
+}
+*{
+    border:1px solid #000;
+}
