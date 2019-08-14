@@ -1,12 +1,268 @@
 body{
     display:flex;
     justify-content: center;
+    font-family: arial,"Microsoft JhengHei","微軟正黑體",sans-serif 
 }
 .root{
     width: 375px;
     height: 812px;
+    border:1px solid #999;
+    padding:20px;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+header > div:first-child , header > div:nth-child(3){
+    width: 20%;
+}
+header > div:nth-child(2){
+    width: 60%;
+}
+
+.status{
+    text-align: center;
+}
+.nowStep{
+    font-size: 25px;
+    color: #2699fb;
+}
+.nextStep{
+    font-size: 12px;
+    color: #454545;
+}
+.info{
+    text-align: center;
+    color: #2699fb;
+}
+
+
+.main{
+    display: flex;
+}
+.product{
+    display: flex;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+.product:after{
+    content:'';
+    width: 5px;
+    height: 5px;
+    background: #2699fb;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    border-radius: 50px;
+
+}
+.detail{
+    margin-left: 25px;
+    width: 100%;
+ 
+}
+.up{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.up .name{
+    font-size: 15px;
+    margin-right: 50px;
+}
+.up .quantity{
+    font-size: 10px;
+    color:#454545;
+}
+.muteText{
+    font-size: 7px;
+    color: #aaaaaa;
+    margin-top: 5px;
+}
+.down{
+    display: flex;
+    justify-content: flex-end;
+}
+.price{
+    display: flex;
+    flex-direction: column;
+ 
+}
+.price > div:first-child{
+    text-align: right;
+}
+.price .value{
+    font-size: 12px;
+    color: #454545;
+    margin-left: 15px;
+}
+
+.payment{
+    margin-top: 15px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 25px;
+   
+}
+.payment .title{
+    text-align: center;
+    font-size: 14px;
+    color: #2699fb;
+    position: relative;
+    margin-bottom: 25px;
+}
+.payment .title:after , .payment .title:before{
+    content:'';
+    height: 1px;
+    width: 80px;
+    background: #ddd;
+    position: absolute;
+    top: 50%;
+}
+.payment .title:before{
+    left:0;
+    margin-right: 5px;
+}
+.payment .title:after{
+    right:0;
+}
+
+.list{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    margin-bottom: 9px;
+}
+.list .kind{
+    width: 45%;
+    height: 82px;
+    border:2px solid #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.list .kind:hover{
+    border:2px solid #2699fb;
+}
+
+.total{
+    width: 100%;
+}
+.serialNumber{
+    font-size: 14px;
+    color: #aaaaaa;
+    text-align: right;
+}
+.totalPrice{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+
+.totalPrice .left >div{
+    font-size: 14px;
+}
+.totalPrice .left .price{
+    font-size: 25px;
+    margin-top: 10px;
+}
+.buttonGroup{
+    display: flex;
+    justify-content: space-between;
+}
+.buttonGroup button{
+    width: 47%;
+    height: 48px;
+    background: none;
+    border:none;
+    border-radius: 13px;
+}
+.buttonGroup button:first-child{
     
+  border: solid 1px #2699fb;
 }
-*{
-    border:1px solid #000;
+.buttonGroup button:last-child{
+    background: #2699fb;
+    color:white;
 }
+
+
+
+/* 
+progress
+*/
+.progress-circle {
+    font-size: 20px;
+    margin: 10px;
+    position: relative;
+    padding: 0;
+    width: 60px;
+    height: 60px;
+    background-color: #F2E9E1; 
+    border-radius: 50%;
+    line-height: 3em;
+ }
+ .progress-circle:after{
+    border: none;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    text-align: center;
+    display: block;
+    border-radius: 50%;
+    width: 54px;
+    height: 54px;
+    background-color: white;
+    content: " ";
+}
+.progress-circle span {
+    position: absolute;
+    line-height: 3em;
+    width: 60px;
+    text-align: center;
+    display: block;
+    color: #53777A;
+    z-index: 2;
+}
+.left-half-clipper { 
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    position: absolute; 
+    clip: rect(0, 60px, 60px, 0px);
+ }
+ .progress-circle.over50 .left-half-clipper {
+    clip: rect(auto,auto,auto,auto);
+ }
+ .value-bar { 
+    position: absolute; 
+    clip: rect(0, 30px, 60px, 0);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 5px solid #2699fb; 
+    box-sizing: border-box;
+ }
+ .progress-circle.over50 .first50-bar {
+    /*Progress bar for the first 50%, filling the whole right half*/
+    position: absolute; /*needed for clipping*/
+    clip: rect(0, 60px, 60px, 34px);
+    background-color: #2699fb;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+ }
+ .progress-circle:not(.over50) .first50-bar{ display: none; }
+.progress-circle.p77 .value-bar { transform: rotate(277deg); }

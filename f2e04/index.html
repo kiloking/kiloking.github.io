@@ -5,17 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="css/animation.css">
+	<link rel="stylesheet" href="css/fontello.css">
 </head>
 <body>
 	<div class="root">
 		<header>
-			<div class="progress">1/3</div>	
-			<div class="status">
+			<div>
+				<div class="progress-circle item">
+					<span>1/3</span>	
+					<div class="left-half-clipper over50 p77">
+						<div class="first50-bar"></div>
+						<div class="value-bar"></div>
+					</div>
+				</div>	
+			</div>
+			
+			<div class="status flex-2 item">
 				<div class="nowStep">選擇付款方式</div>
 				<div class="nextStep">下一步：付款資訊填寫</div>
 			</div>	
-			<div class="info">!</div>
+			<div class="info item"><i class="demo-icon icon-info-circled-alt"></i></div>
 		</header>
 		<div class="main">
 			<div class="product">
@@ -29,9 +40,15 @@
 								數量:1
 							</div>
 					</div>
+					<div class="muteText">
+							Apple.Inc <br>
+							No.134443254
+					</div>
 					<div class="down">
 						<div class="price">
-							$5,290 <span class="value">NTD</span>
+							<div>
+								$5,290 <span class="value">NTD</span>
+							</div>
 							<div class="muteText">含加值型營業稅： 約 NT$380</div>
 						</div>
 					</div>
@@ -59,7 +76,9 @@
 				<div class="left">
 					<div>總計</div>
 					<div class="price">
-						$5,290 <span class="value">NTD</span>
+						<div>
+								$5,290 <span class="value">NTD</span>
+						</div>
 					</div>
 				</div>
 				<div class="right">
