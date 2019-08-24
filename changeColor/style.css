@@ -1,0 +1,25 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{text-align: center;}
+.colorBtn{
+    padding: 0.25rem 0.5rem;
+    border:3px solid #d35151;
+    border-radius:7px;
+    background: none;
+    color:#d35151;
+    font-size: 0.85rem;
+    text-transform: capitalize;
+    cursor: pointer;
+    outline: none;
+}
+.colorBtn:hover{
+
+}
+
+.hex{
+    font-size: 3rem;
+}
